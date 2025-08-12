@@ -1,92 +1,116 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "Abd Ur Rehman",
+  title: "Software Engineer",
+  description: "Portfolio",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "abdurehman.dev@gmail.com",
+    linkedin: "https://linkedin.com/in/a-noob-in-coding/",
+    github: "https://github.com/A-noob-in-Coding",
+    leetcode: "https://leetcode.com/u/A-noob-in-Coding/",
+    codewars: "https://www.codewars.com/users/A-noob-in-Coding",
+    fiverr: "https://www.fiverr.com/s/lj1LkkQ"
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "Currently studying Software Engineering at FAST NUCES, I combine AWS certifications, competitive programming experience, and a strong computer science background to build everything from sleek, responsive interfaces to reliable backend systems using MERN Stack and Spring Boot. I also freelance on Fiverr, turning client ideas into polished, deployment-ready web apps.",
+  skills: [
+    "C", "C++", "JavaScript", "Kotlin", "Python", "Go",
+    "HTML", "CSS", "SASS", "React", "Chakra UI",
+    "Node.js", "Express.js", "Spring",
+    "MongoDB", "PostgreSQL", "SQLite", "Redis",
+    "Pandas", "NumPy",
+    "Git", "Docker", "Vercel", "Vite", "NeoVim", "DBeaver", "Markdown"
+  ],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Lost and Found Portal",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        `A campus-focused web application that allows students and staff to report, search, and manage
+lost or found items efficiently.It features secure user login, item posting with images,
+      automated email notifications, and a real- time chat system for coordination between users.
+Designed to improve communication and recovery of lost belongings within the FAST NUCES
+community. `,
+      link: "https://github.com/A-noob-in-Coding/lost-and-found",
+      skills: ["React", "Node.js", "ExpressJS", "PostgreSQL", "Cloudinary", "NeonDB"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "Quizify",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        `An educational web platform that enables teachers to create and evaluate quizzes with
+automatic grading and instant results. It includes authentication, leaderboard-based
+performance tracking, and a built-in chat system for student-teacher interaction. The project
+simplifies assessments and boosts engagement in academic environments`,
+      link: "https://github.com/SDATEAM4/Quizify",
+      skills: ["React", "Spring Boot", "PostgreSQL", "Cloudinary", "NeonDB"],
     },
     {
-      name: "ExtensionKit",
+      name: "Github Stalker",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        `Lightweight CLI that fetches recent public events for any GitHub user and prints readable,
+colorized summaries (PushEvent: branch/commit SHA/message; CreateEvent: repo details;
+ReleaseEvent: tag/release notes). Fast, low-footprint, and masks emails by default (--show-
+emails to reveal).`,
+      link: "https://github.com/A-noob-in-Coding/ghstalker",
+      skills: ["GO", "Github-API", "gjson"],
     },
+    {
+      name: "RediGO",
+      description: `A mini-project demonstrating the working of a reverse caching proxy using Go and Redis.`,
+      link: "https://github.com/A-noob-in-Coding/RediGo",
+      skills: ["GO", "Redis", "DevOps"]
+    },
+    {
+      name: "Sky-Cache",
+      description: `WeatherAPI CLI is a lightning-fast command-line tool written in Go for fetching real-time weather data from the Visual Crossing API, with built-in Redis caching to skip redundant API calls. Redis runs inside a Docker container via Docker Compose, so setup is quick and hassle-free.`,
+      link: "https://github.com/A-noob-in-Coding/Sky-Cache",
+      skills: ["GO", "Redis", "API", "DevOps"]
+    }
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      title: "Speed programming Competitions",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
-    },
+        "Learning competitive programming through real-world contests.",
+        "Participated in ACM Coding Competition, Digital Pakistan Hackathon, ITU Code Rush and UCP Taakra.", "Using these events to practice, improve, and gain experience."
+      ]
+    }
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
+      school: "FAST NUCES Lahore",
+      degree: "Bachelor of Science in Software Engineering",
+      dateRange: "2023- 2027",
     },
   ],
+  certification: [
+    {
+      name: "AWS Cloud Practitioner Essentials",
+      by: "AWS",
+      description: `Foundational certification demonstrating knowledge of AWS Cloud concepts,
+services, and basic security.`
+    }, {
+      name: "Cisco Linux Essentials",
+      by: "Cicso Networking Academy",
+      description: `oundational certification in Linux system operations, command-line skills, and
+open-source concepts`
+    }
+    ,
+    {
+      name: "Getting Started with DevOps on AWS",
+      by: "AWS",
+      description: `Explored CI/CD, infrastructure as code, and automation using AWS DevOps
+tools.`
+    }, {
+      name: "Introduction to Containers by AWS",
+      by: "AWS",
+      description: `Learned basics of Docker, container orchestration`
+    }, {
+      name: "Cisco Linux Unhatched",
+      by: "Cicso Networking Academy",
+      description: `covered basic Linux commands, navigation, and file management`
+    }
+
+
+
+  ]
 };
