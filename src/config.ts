@@ -91,7 +91,7 @@ services, and basic security.`
     }, {
       name: "Cisco Linux Essentials",
       by: "Cicso Networking Academy",
-      description: `oundational certification in Linux system operations, command-line skills, and
+      description: `Foundational certification in Linux system operations, command-line skills, and
 open-source concepts`
     }
     ,
@@ -107,7 +107,7 @@ tools.`
     }, {
       name: "Cisco Linux Unhatched",
       by: "Cicso Networking Academy",
-      description: `covered basic Linux commands, navigation, and file management`
+      description: `Covered basic Linux commands, navigation, and file management`
     }
 
 
