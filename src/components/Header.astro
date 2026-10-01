@@ -2,7 +2,10 @@
 import { siteConfig } from "../config";
 
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
-const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+const hasProfessionalExperience =
+  siteConfig.professionalExperience &&
+  siteConfig.professionalExperience.length > 0;
+const hasHobbies = siteConfig.hobbies && siteConfig.hobbies.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 const hasCertifications= siteConfig.certification && siteConfig.certification.length > 0;
 ---
@@ -16,40 +19,53 @@ const hasCertifications= siteConfig.certification && siteConfig.certification.le
       <li>
         <a
           href="#about"
-          class="text-gray-700 hover:text-black transition-colors font-medium"
+          class="theme-nav-link font-medium"
         >
           About
         </a>
       </li>
       {
+        hasEducation && (
+          <li>
+            <a
+              href="#education"
+              class="theme-nav-link font-medium"
+            >
+              Education
+            </a>
+          </li>
+        )
+      }
+      {
         hasProjects && (
           <li>
             <a
               href="#projects"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
+              class="theme-nav-link font-medium"
             >
               Projects
             </a>
           </li>
         )
-        }{
-        hasCertifications && (
-        <li>
-          <a href="#certifications" 
-
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-          Certifications
-          </a>
-        </li>
-        )
-        }
+      }
       {
-        hasExperience && (
+        hasCertifications && (
           <li>
             <a
-              href="#experience"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
+              href="#certifications"
+              class="theme-nav-link font-medium"
+            >
+              Certifications
+            </a>
+          </li>
+        )
+      }
+      {
+        hasProfessionalExperience && (
+          <li>
+            <a
+              href="#professional-experience"
+              class="theme-nav-link font-medium"
             >
               Experience
             </a>
@@ -57,13 +73,13 @@ const hasCertifications= siteConfig.certification && siteConfig.certification.le
         )
       }
       {
-        hasEducation && (
+        hasHobbies && (
           <li>
             <a
-              href="#education"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
+              href="#hobbies"
+              class="theme-nav-link font-medium"
             >
-              Education
+              Hobbies
             </a>
           </li>
         )
@@ -76,9 +92,9 @@ const hasCertifications= siteConfig.certification && siteConfig.certification.le
   window.addEventListener("scroll", () => {
     const header = document.getElementById("header");
     if (window.scrollY > 100) {
-      header?.classList.add("bg-white/80", "backdrop-blur-sm");
+      header?.classList.add("is-scrolled");
     } else {
-      header?.classList.remove("bg-white/80", "backdrop-blur-sm");
+      header?.classList.remove("is-scrolled");
     }
   });
 </script>

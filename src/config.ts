@@ -2,24 +2,41 @@ export const siteConfig = {
   name: "Abd Ur Rehman",
   title: "Software Engineer",
   description: "Portfolio",
+  /** @deprecated Use themes in src/themes.ts — default is "ocean" (#1d4ed8) */
   accentColor: "#1d4ed8",
   social: {
     email: "abdurehman.dev@gmail.com",
     linkedin: "https://linkedin.com/in/a-noob-in-coding/",
     github: "https://github.com/A-noob-in-Coding",
-    leetcode: "https://leetcode.com/u/A-noob-in-Coding/",
-    codewars: "https://www.codewars.com/users/A-noob-in-Coding",
-    fiverr: "https://www.fiverr.com/s/lj1LkkQ"
+    cv: "https://a-noob-in-coding.github.io/Resume/"
   },
   aboutMe:
-    "Currently studying Software Engineering at FAST NUCES, I combine AWS certifications, competitive programming experience, and a strong computer science background to build everything from sleek, responsive interfaces to reliable backend systems using MERN Stack and Spring Boot. I also freelance on Fiverr, turning client ideas into polished, deployment-ready web apps.",
+    "Currently pursuing a Software Engineering degree at FAST NUCES, I combine AWS certifications, competitive programming experience, and a strong foundation in computer science to develop responsive, user-focused interfaces and reliable backend systems using the MERN Stack and Spring Boot. I am actively looking for remote software development roles where I can apply my skills, contribute to real-world projects, and continue growing as a developer.",
   skills: [
-    "C", "C++", "JavaScript", "Kotlin", "Python", "Go",
-    "HTML", "CSS", "SASS", "React", "Chakra UI",
-    "Node.js", "Express.js", "Spring",
-    "MongoDB", "PostgreSQL", "SQLite", "Redis",
-    "Pandas", "NumPy",
-    "Git", "Docker", "Vercel", "Vite", "NeoVim", "DBeaver", "Markdown"
+    {
+      category: "Programming Languages",
+      items: ["C", "C++", "JavaScript", "Kotlin", "Python", "Go"],
+    },
+    {
+      category: "Web Technologies",
+      items: ["HTML", "CSS", "SASS", "React", "Chakra UI", "Node.js", "Express.js"],
+    },
+    {
+      category: "Frameworks & Databases",
+      items: ["Spring", "MongoDB", "PostgreSQL", "SQLite", "Redis", "SQL"],
+    },
+    {
+      category: "Data & Analytics",
+      items: ["Pandas", "NumPy"],
+    },
+    {
+      category: "DevOps & Operations",
+      items: ["AWS", "Docker", "Kubernetes", "Helm", "Skaffold", "GitLab CI", "Bash"],
+    },
+    {
+      category: "Tools & Utilities",
+      items: ["Git", "Vercel", "Vite", "NeoVim", "DBeaver", "Markdown"],
+    },
   ],
   projects: [
     {
@@ -30,7 +47,7 @@ lost or found items efficiently.It features secure user login, item posting with
       automated email notifications, and a real- time chat system for coordination between users.
 Designed to improve communication and recovery of lost belongings within the FAST NUCES
 community. `,
-      link: "https://github.com/A-noob-in-Coding/lost-and-found",
+      link: "https://github.com/A-noob-in-Coding/lost-and-found-mirror",
       skills: ["React", "Node.js", "ExpressJS", "PostgreSQL", "Cloudinary", "NeonDB"],
     },
     {
@@ -66,20 +83,36 @@ emails to reveal).`,
       skills: ["GO", "Redis", "API", "DevOps"]
     }
   ],
-  experience: [
+  professionalExperience: [
     {
-      title: "Speed programming Competitions",
+      title: "DevOps Intern",
+      company: "Siemens Digital Industrial Software",
+      dateRange: "April 2026 - Present",
+    },
+  ],
+  hobbies: [
+    {
+      title: "Competitive Programming",
       bullets: [
-        "Learning competitive programming through real-world contests.",
-        "Participated in ACM Coding Competition, Digital Pakistan Hackathon, ITU Code Rush and UCP Taakra.", "Using these events to practice, improve, and gain experience."
-      ]
-    }
+        "Participate in programming contests to strengthen problem-solving and algorithmic thinking.",
+        "Experience in events such as Digital Pakistan Speed Programming Competition, ACM contests, Digital Pakistan Hackathon, ITU Code Rush, and UCP Taakra.",
+        "Focused on improving speed, accuracy, and structured thinking under time constraints.",
+      ],
+    },
   ],
   education: [
     {
       school: "FAST NUCES Lahore",
       degree: "Bachelor of Science in Software Engineering",
       dateRange: "2023- 2027",
+    }, {
+      school: "Punjab College Campus 8 Lahore",
+      degree: "FSC Pre Engineering",
+      dateRange: "2021- 2023",
+    }, {
+      school: "Federal Government School no 2, Lahore Cantt",
+      degree: "Matriculations",
+      dateRange: "2019- 2021",
     },
   ],
   certification: [

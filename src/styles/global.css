@@ -1,5 +1,9 @@
 @import "tailwindcss";
+@import "./themes.css";
 
+html,
 body {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: var(--bg-page);
+  color: var(--text-secondary);
 }

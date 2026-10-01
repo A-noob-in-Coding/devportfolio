@@ -3,10 +3,11 @@ import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Projects from "../components/Projects.astro";
-import Experience from "../components/Experience.astro";
+import ProfessionalExperience from "../components/ProfessionalExperience.astro";
+import Hobbies from "../components/Hobbies.astro";
 import Education from "../components/Education.astro";
 import Footer from "../components/Footer.astro";
-import Certificates from "../components/Certificates.astro"
+import Certificates from "../components/Certificates.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
 ---
@@ -14,7 +15,7 @@ import "../styles/global.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={siteConfig.description} />
@@ -31,10 +32,11 @@ import "../styles/global.css";
     <section>
       <Hero />
       <About />
-      <Education />
+      <ProfessionalExperience />
       <Projects />
+      <Education />
       <Certificates />
-      <Experience />
+      <Hobbies />
     </section>
     <Footer />
   </body>

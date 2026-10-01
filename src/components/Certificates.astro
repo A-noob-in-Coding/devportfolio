@@ -6,34 +6,28 @@ const hasCertifications= siteConfig.certification && siteConfig.certification.le
 ---
 {
   hasCertifications && (
-    <section id="certifications" class="p-8 sm:p-12 md:p-16 lg:p-24">
+    <section id="certifications" class="theme-section p-8 sm:p-12 md:p-16 lg:p-24">
       <div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           <div class="lg:col-span-4">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold theme-heading">
               Certs
             </h2>
-            <div
-              class="w-[75px] h-[5px] mt-2 rounded-full"
-              style={`background-color: ${siteConfig.accentColor}`}
-            />
+            <div class="w-[75px] h-[5px] mt-2 rounded-full accent-bar" />
           </div>
           <div class="lg:col-span-8">
             <div class="space-y-8">
               {siteConfig.certification.map((cert) => (
-                <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
+                <div class="theme-card rounded-lg p-4 sm:p-5 md:p-6 transition-shadow duration-300">
                   <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                     <div class="flex-1">
-                      <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+                      <h3 class="text-lg sm:text-xl font-semibold theme-heading mb-2">
                         {cert.name}
                       </h3>
-                      <p
-                        class="text-base sm:text-lg font-medium mb-3"
-                        style={`color: ${siteConfig.accentColor}`}
-                      >
+                      <p class="text-base sm:text-lg font-medium mb-3 text-accent">
                         {cert.by}
                       </p>
-                      <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      <p class="text-sm sm:text-base theme-subheading leading-relaxed">
                         {cert.description}
                       </p>
                     </div>
